@@ -33,13 +33,12 @@
 #include <stdio.h>
 
 int main() {
-    int num_lines;
-    printf("กรุณากรอกจำนวนบรรทัด: ");
-    scanf("%d", &num_lines);
+    int n;
+    printf("Please enter a number: ");
+    scanf("%d", &n);
 
-    for (int i = 1; i <= num_lines; i++) {
-        // ตรวจสอบว่าเลขบรรทัดเป็นคู่หรือคี่และพิมพ์ออกมาในรูปแบบที่กำหนด
-        if (i % 2 == 0) {
+    for (int i = 1; i <= n; i++) {
+        if (n % 2 == 0) {
             printf("(%d) Hello World\n", i);
         } else {
             printf("[%d] Hello World\n", i);
@@ -48,6 +47,10 @@ int main() {
 
     return 0;
 }
+
+
+
+   
 
 
 
